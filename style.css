@@ -1,4 +1,14 @@
 
-.checked {
+.unchecked {
 	filter: grayscale(100%);
+	opacity: 0.5;
+}
+
+.item {
+	width: 36px;
+	position: absolute;
+}
+
+.menu {
+	width: 1000px;
 }

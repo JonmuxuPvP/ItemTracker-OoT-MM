@@ -137,7 +137,15 @@ majorasInventory.setItem(greatFairySword, 17);
 majorasInventory.setItem(tradeItemThree, 18);
 
 for (let i = 0; i < 6; i++) {
-	const bottle = new Item("./assets/majoras-mask/empty-bottle.png");
+	const bottle = new MultipleItem(["./assets/majoras-mask/empty-bottle.png",
+									 "./assets/majoras-mask/red-potion.png",
+								 	 "./assets/majoras-mask/green-potion.png",
+								 	 "./assets/majoras-mask/blue-potion.png",
+								 	 "./assets/majoras-mask/zora-egg.png",
+								 	 "./assets/majoras-mask/milk.png",
+								 	 "./assets/majoras-mask/half-milk.png",
+								 	 "./assets/majoras-mask/gold-dust.png",
+									 "./assets/majoras-mask/big-poe.png"]);
 	majorasInventory.setItem(bottle, 19 + i);
 }
 
@@ -224,7 +232,15 @@ const lightArrows = new Item("./assets/ocarina-of-time/light-arrow.png");
 const nayrusLove = new Item("./assets/ocarina-of-time/nayrus-love.png");
 
 for (let i = 0; i < 4; i++) {
-	const bottle = new Item("./assets/ocarina-of-time/empty-bottle.png");
+	const bottle = new MultipleItem(["./assets/ocarina-of-time/empty-bottle.png",
+		 							 "./assets/ocarina-of-time/rutos-letter.png",
+		 							 "./assets/ocarina-of-time/red-potion.png",
+									 "./assets/ocarina-of-time/green-potion.png",
+									 "./assets/ocarina-of-time/blue-potion.png",
+									 "./assets/ocarina-of-time/blue-fire.png",
+									 "./assets/ocarina-of-time/big-poe.png",
+									 "./assets/ocarina-of-time/milk.png",
+									 "./assets/ocarina-of-time/milk-(half).png"]);
 	ocarinaInventory.setItem(bottle, 19 + i);
 }
 

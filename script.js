@@ -22,7 +22,7 @@ const scale = new MultipleItem(["./assets/ocarina-of-time/silver-scale.png",
 
 const kokiriSword = new Item("./assets/ocarina-of-time/kokiri-sword.png");
 const masterSword = new Item("./assets/ocarina-of-time/master-sword.png");
-const biggoronsSword = new MultipleItem(["./assets/ocarina-of-time/biggorons-sword.png", "./assets/ocarina-of-time/gorons-sword-(broken).png"]);
+const biggoronsSword = new MultipleItem(["./assets/ocarina-of-time/biggorons-sword.png", "./assets/ocarina-of-time/giants-knife-broken.png"]);
 
 const dekuShield = new Item("./assets/ocarina-of-time/deku-shield.png");
 const hylianShield = new Item("./assets/ocarina-of-time/hylian-shield.png");

@@ -196,4 +196,69 @@ class Songs {
 	}
 }
 
-export { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, Songs }
+class OcarinaQuestStatus {
+	constructor() {
+		this.firstX = 700;
+		this.firstY = 43;
+		this.offset = 39;
+
+		this.firstSpiritualStoneX = 861;
+		this.firstSpiritualStoneY = 175;
+	}
+
+	setItem(item, slot) {
+		let x, y;
+		if (slot == 1) {
+			x = this.firstX; 
+			y = this.firstY;
+		} else if (slot == 2) {
+			x = this.firstX + (this.offset * (slot - 1));
+			y = this.firstY;
+		} else if (slot >= 4 && slot <= 9) {
+			switch (slot) {
+				case 4:
+					x = 900;
+					y = 39;
+					break;
+
+				case 5:
+					x = 935;
+					y = 61;
+					break;
+
+				case 6:
+					x = 935;
+					y = 101;
+					break;
+
+				case 7:
+					x = 900;
+					y = 123;
+					break;
+
+				case 8:
+					x = 865;
+					y = 101;
+					break;
+
+				case 9:
+					x = 865;
+					y = 61;
+					break;
+			}
+		} else if (slot >= 10 & slot <= 12) {
+			if (slot == 10) {
+				x = this.firstSpiritualStoneX;
+			} else {
+				x = this.firstSpiritualStoneX + (this.offset * (slot - 10));
+			}
+			y = this.firstSpiritualStoneY;
+		}
+
+		item.setPosition(x, y);
+	}
+}
+
+
+
+export { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, Songs }

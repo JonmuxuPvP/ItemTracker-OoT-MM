@@ -1,4 +1,4 @@
-import { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, Songs } from "./scripts/utilities.js";
+import { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, Songs } from "./scripts/utilities.js";
 
 const ocarinaEquipment = new OcarinaEquipment();
 const bulletBag = new MultipleItem(["./assets/ocarina-of-time/bullet-bag-(30).png",
@@ -330,3 +330,35 @@ songsMM.setItem(goronLullaby, 8);
 songsMM.setItem(newWaveBossaNova, 9);
 songsMM.setItem(elegyOfEmptiness, 10);
 songsMM.setItem(oathToOrder, 11);
+
+
+const ocarinaQuestStatus = new OcarinaQuestStatus();
+
+const stoneOfAgony = new Item("./assets/ocarina-of-time/stone-of-agony.png");
+const gerudoCard = new Item("./assets/ocarina-of-time/gerudo-card.png");
+
+const lightMedallion = new Item("./assets/ocarina-of-time/light-medallion.png");
+const forestMedallion = new Item("./assets/ocarina-of-time/forest-medallion.png");
+const fireMedallion = new Item("./assets/ocarina-of-time/fire-medallion.png");
+const waterMedallion = new Item("./assets/ocarina-of-time/water-medallion.png");
+const shadowMedallion = new Item("./assets/ocarina-of-time/shadow-medallion.png");
+const spiritMedallion = new Item("./assets/ocarina-of-time/spirit-medallion.png");
+
+const kokiriEmerald = new Item("./assets/ocarina-of-time/kokiri-emerald.png");
+const goronsRuby = new Item("./assets/ocarina-of-time/gorons-ruby.png");
+const zorasSapphire = new Item("./assets/ocarina-of-time/zoras-sapphire.png");
+
+ocarinaQuestStatus.setItem(stoneOfAgony, 1);
+ocarinaQuestStatus.setItem(gerudoCard, 2);
+
+ocarinaQuestStatus.setItem(kokiriEmerald, 10);
+ocarinaQuestStatus.setItem(goronsRuby, 11);
+ocarinaQuestStatus.setItem(zorasSapphire, 12);
+
+ocarinaQuestStatus.setItem(lightMedallion, 4);
+ocarinaQuestStatus.setItem(forestMedallion, 5);
+ocarinaQuestStatus.setItem(fireMedallion, 6);
+ocarinaQuestStatus.setItem(waterMedallion, 7);
+ocarinaQuestStatus.setItem(spiritMedallion, 8);
+ocarinaQuestStatus.setItem(shadowMedallion, 9);
+

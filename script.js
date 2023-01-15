@@ -1,6 +1,6 @@
-import { Item, MultipleItem, Inventory, Equipment, Songs } from "./scripts/utilities.js";
+import { Item, MultipleItem, Inventory, OcarinaEquipment, Songs } from "./scripts/utilities.js";
 
-const equipment = new Equipment();
+const ocarinaEquipment = new OcarinaEquipment();
 const bulletBag = new MultipleItem(["./assets/ocarina-of-time/bullet-bag-(30).png",
 									"./assets/ocarina-of-time/bullet-bag-(40).png",
 								    "./assets/ocarina-of-time/bullet-bag-(50).png"]);
@@ -36,27 +36,27 @@ const kokiriBoots = new Item("./assets/ocarina-of-time/kokiri-boots.png", true);
 const ironBoots = new Item("./assets/ocarina-of-time/iron-boots.png");
 const hoverBoots = new Item("./assets/ocarina-of-time/hover-boots.png");
 
-equipment.setItem(bulletBag, 1);
-equipment.setItem(quiver, 2);
-equipment.setItem(bombBag, 3);
-equipment.setItem(strength, 4);
-equipment.setItem(scale, 5);
+ocarinaEquipment.setItem(bulletBag, 1);
+ocarinaEquipment.setItem(quiver, 2);
+ocarinaEquipment.setItem(bombBag, 3);
+ocarinaEquipment.setItem(strength, 4);
+ocarinaEquipment.setItem(scale, 5);
 
-equipment.setItem(kokiriSword, 6);
-equipment.setItem(masterSword, 7);
-equipment.setItem(biggoronsSword, 8);
+ocarinaEquipment.setItem(kokiriSword, 6);
+ocarinaEquipment.setItem(masterSword, 7);
+ocarinaEquipment.setItem(biggoronsSword, 8);
 
-equipment.setItem(dekuShield, 9);
-equipment.setItem(hylianShield, 10);
-equipment.setItem(mirrorShieldOoT, 11);
+ocarinaEquipment.setItem(dekuShield, 9);
+ocarinaEquipment.setItem(hylianShield, 10);
+ocarinaEquipment.setItem(mirrorShieldOoT, 11);
 
-equipment.setItem(kokiriTunic, 12);
-equipment.setItem(goronTunic, 13);
-equipment.setItem(zoraTunic, 14);
+ocarinaEquipment.setItem(kokiriTunic, 12);
+ocarinaEquipment.setItem(goronTunic, 13);
+ocarinaEquipment.setItem(zoraTunic, 14);
 
-equipment.setItem(kokiriBoots, 15);
-equipment.setItem(ironBoots, 16);
-equipment.setItem(hoverBoots, 17);
+ocarinaEquipment.setItem(kokiriBoots, 15);
+ocarinaEquipment.setItem(ironBoots, 16);
+ocarinaEquipment.setItem(hoverBoots, 17);
 
 const majorasInventory = new Inventory(378, 261);
 

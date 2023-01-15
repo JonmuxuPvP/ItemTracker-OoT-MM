@@ -104,7 +104,7 @@ class Inventory {
 	}
 }
 
-class Equipment {
+class OcarinaEquipment {
 	constructor() {
 		this.firstSlotX = 17;
 		this.firstSlotY = 24;
@@ -172,4 +172,4 @@ class Songs {
 	}
 }
 
-export { Item, MultipleItem, Inventory, Equipment, Songs }
+export { Item, MultipleItem, Inventory, OcarinaEquipment, Songs }

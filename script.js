@@ -1,4 +1,4 @@
-import { Item, MultipleItem, Inventory, OcarinaEquipment, Songs } from "./scripts/utilities.js";
+import { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, Songs } from "./scripts/utilities.js";
 
 const ocarinaEquipment = new OcarinaEquipment();
 const bulletBag = new MultipleItem(["./assets/ocarina-of-time/bullet-bag-(30).png",
@@ -57,6 +57,37 @@ ocarinaEquipment.setItem(zoraTunic, 14);
 ocarinaEquipment.setItem(kokiriBoots, 15);
 ocarinaEquipment.setItem(ironBoots, 16);
 ocarinaEquipment.setItem(hoverBoots, 17);
+
+const majorasEquipment = new MajorasEquipment(861, 348);
+
+const kokiriSwordMM = new MultipleItem(["./assets/majoras-mask/kokiri-sword.png", 
+									    "./assets/majoras-mask/razor-sword.png",
+									    "./assets/majoras-mask/gilded-sword.png"]);
+
+const magic = new Item("./assets/majoras-mask/stray-fairy-(right).png");
+const shieldsMM = new MultipleItem(["./assets/majoras-mask/heros-shield.png", 
+									"./assets/majoras-mask/mirror-shield.png"]);
+
+const quiverMM = new MultipleItem(["./assets/majoras-mask/quiver-30.png", 
+								   "./assets/majoras-mask/quiver-40.png", 
+								   "./assets/majoras-mask/quiver-50.png"]);
+
+const walletsMM = new MultipleItem(["./assets/majoras-mask/boss-room-key-(unused).png", 
+								   "./assets/majoras-mask/adults-wallet.png", 
+								   "./assets/majoras-mask/giants-wallet.png"]);
+
+const bombBagMM = new MultipleItem(["./assets/majoras-mask/bomb-bag-20.png", 
+								   "./assets/majoras-mask/bomb-bag-30.png", 
+								   "./assets/majoras-mask/bomb-bag-40.png"]);
+
+majorasEquipment.setItem(kokiriSwordMM, 1);
+majorasEquipment.setItem(magic, 2);
+majorasEquipment.setItem(shieldsMM, 3);
+
+majorasEquipment.setItem(quiverMM, 4);
+majorasEquipment.setItem(walletsMM, 5);
+majorasEquipment.setItem(bombBagMM, 6);
+
 
 const majorasInventory = new Inventory(378, 261);
 

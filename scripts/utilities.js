@@ -146,6 +146,30 @@ class OcarinaEquipment {
 
 }
 
+class MajorasEquipment {
+	constructor(x, y) {
+		this.x = x;
+		this.y = y;
+		this.offset = 44;
+	}
+
+	setItem(item, slot) {
+		let x, y;
+		if (slot == 1) {
+			x = this.x;
+			y = this.y;
+		} else if (slot == 2 || slot == 3) {
+			x = this.x + (this.offset * (slot - 1));	
+			y = this.y;
+		} else {
+			x = this.x + (this.offset * (slot - 4));	
+			y = this.y + this.offset;
+		}
+
+		item.setPosition(x, y);
+	}
+}
+
 class Songs {
 	constructor(x, y) {
 		this.x = x;
@@ -172,4 +196,4 @@ class Songs {
 	}
 }
 
-export { Item, MultipleItem, Inventory, OcarinaEquipment, Songs }
+export { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, Songs }

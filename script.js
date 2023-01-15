@@ -88,7 +88,6 @@ majorasEquipment.setItem(quiverMM, 4);
 majorasEquipment.setItem(walletsMM, 5);
 majorasEquipment.setItem(bombBagMM, 6);
 
-
 const majorasInventory = new Inventory(378, 261);
 
 const ocarinaMM = new Item("./assets/majoras-mask/ocarina-of-time.png");
@@ -229,6 +228,28 @@ for (let i = 0; i < 4; i++) {
 	ocarinaInventory.setItem(bottle, 19 + i);
 }
 
+const childTradeItems = new MultipleItem(["./assets/ocarina-of-time/weird-egg.png",
+										   "./assets/ocarina-of-time/cucco.png",
+									       "./assets/ocarina-of-time/zeldas-letter.png",
+									       "./assets/ocarina-of-time/keaton-mask.png",
+									       "./assets/ocarina-of-time/skull-mask.png",
+									       "./assets/ocarina-of-time/spooky-mask.png",
+									       "./assets/ocarina-of-time/bunny-hood.png",
+									       "./assets/ocarina-of-time/mask-of-truth.png"]);
+
+const adultTradeItems = new MultipleItem(["./assets/ocarina-of-time/weird-egg.png",
+										   "./assets/ocarina-of-time/cucco.png",
+									       "./assets/ocarina-of-time/cojiro.png",
+									       "./assets/ocarina-of-time/odd-mushroom.png",
+									       "./assets/ocarina-of-time/odd-potion.png",
+									       "./assets/ocarina-of-time/poachers-saw.png",
+									       "./assets/ocarina-of-time/gorons-sword-(broken).png",
+									       "./assets/ocarina-of-time/gorons-sword-(broken).png",
+									       "./assets/ocarina-of-time/prescription.png",
+									       "./assets/ocarina-of-time/eyeball-frog.png",
+									       "./assets/ocarina-of-time/eyedrops.png",
+									       "./assets/ocarina-of-time/claim-check.png"]);
+
 ocarinaInventory.setItem(dekuSticksOoT, 1);
 ocarinaInventory.setItem(dekuNutsOoT, 2);
 ocarinaInventory.setItem(bombsOoT, 3);
@@ -249,6 +270,9 @@ ocarinaInventory.setItem(magicBeansOoT, 15);
 ocarinaInventory.setItem(megatonHammer, 16);
 ocarinaInventory.setItem(lightArrows, 17);
 ocarinaInventory.setItem(nayrusLove, 18);
+ocarinaInventory.setItem(adultTradeItems, 23);
+ocarinaInventory.setItem(childTradeItems, 24);
+
 
 const songsOoT = new Songs(687, 148);
 

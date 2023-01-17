@@ -259,6 +259,41 @@ class OcarinaQuestStatus {
 	}
 }
 
+class MajorasQuestStatus {
+	constructor() {
+
+	}
+
+	setItem(item, slot) {
+		let x, y;
+
+		switch (slot) {
+			case 1:
+				x = 905;
+				y = 248;
+				break;
+
+			case 2:
+				x = 949;
+				y = 277;
+				break;
+
+			case 3:
+				x = 904;
+				y = 304;
+				break;
+
+			case 4:
+				x = 856;
+				y = 277;
+				break;
+		}
+
+		item.setPosition(x, y);
+	}
+
+}
 
 
-export { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, Songs }
+
+export { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, MajorasQuestStatus, Songs }

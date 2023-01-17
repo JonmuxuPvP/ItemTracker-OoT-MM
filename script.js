@@ -1,4 +1,5 @@
-import { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, Songs } from "./scripts/utilities.js";
+import { Item, MultipleItem, Inventory, OcarinaEquipment, MajorasEquipment, OcarinaQuestStatus, MajorasQuestStatus, Songs } from "./scripts/utilities.js";
+
 
 const ocarinaEquipment = new OcarinaEquipment();
 const bulletBag = new MultipleItem(["./assets/ocarina-of-time/bullet-bag-(30).png",
@@ -377,4 +378,17 @@ ocarinaQuestStatus.setItem(fireMedallion, 6);
 ocarinaQuestStatus.setItem(waterMedallion, 7);
 ocarinaQuestStatus.setItem(spiritMedallion, 8);
 ocarinaQuestStatus.setItem(shadowMedallion, 9);
+
+const majorasQuestStatus = new MajorasQuestStatus();
+
+const odolwa = new Item("./assets/majoras-mask/odolwas-remains.png");
+const goht = new Item("./assets/majoras-mask/gohts-remains.png");
+const gyorg = new Item("./assets/majoras-mask/gyorgs-remains.png");
+const twinmold = new Item("./assets/majoras-mask/twinmolds-remains.png");
+
+majorasQuestStatus.setItem(odolwa, 1);
+majorasQuestStatus.setItem(goht, 2);
+majorasQuestStatus.setItem(gyorg, 3);
+majorasQuestStatus.setItem(twinmold, 4);
+
 

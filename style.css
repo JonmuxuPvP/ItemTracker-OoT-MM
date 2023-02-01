@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: gray;
 }
 
 .unchecked {
@@ -12,6 +12,30 @@ body {
 	position: absolute;
 }
 
-.menu {
-	width: 1000px;
+.container {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.hyrule-field {
+	width: 700px;
+}
+
+.termina-field {
+	width: 690px;
+}
+
+.settings {
+	background-color: gold;
+}
+
+.check {
+
+}
+
+.display-none {
+	display: none;
 }

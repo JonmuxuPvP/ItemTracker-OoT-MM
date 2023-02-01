@@ -4,7 +4,56 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<img src="./assets/menus.png" class="menu"></img>
-		<script type="module" src="script.js"></script>
+		<main class="container">
+			<div>
+
+				<div id="ocarina-inventories" class="container column">
+					<div class="container">
+						<img src="./assets/ocarina-of-time/inventories/equipment.png"></img>
+						<img src="./assets/ocarina-of-time/inventories/select-item.png"></img>
+					</div>
+					<div class="container">
+						<img src="./assets/ocarina-of-time/inventories/dungeon.png"></img>
+						<img src="./assets/ocarina-of-time/inventories/quest-status.png"></img>
+					</div>
+				</div>
+
+				<div id="majoras-inventories" class="container column">
+					<div class="container">
+						<img src="./assets/majoras-mask/inventories/masks.png"></img>
+						<img src="./assets/majoras-mask/inventories/select-item.png"></img>
+					</div>
+					<div class="container">
+						<img src="./assets/majoras-mask/inventories/dungeon.png"></img>
+						<img src="./assets/majoras-mask/inventories/quest-status.png"></img>
+					</div>
+				</div>
+
+			</div>
+	
+			<div>
+				<img id="hyrule-map" src="./assets/ocarina-of-time/hyrule-field.png" class="hyrule-field"></img>
+				<div class="settings">
+					<input id="termina-input" type="checkbox" checked>
+					<label for="test">Termina Map</label>
+
+					<input id="hyrule-input" type="checkbox" checked>
+					<label for="test">Hyrule Map</label>
+
+					<input id="majoras-input" type="checkbox" checked>
+					<label for="test">Majora's Mask Inventories</label>
+
+					<input id="ocarina-input" type="checkbox" checked>
+					<label for="test">Ocarina of Time Inventories</label>
+				</div>
+
+			</div>
+
+			<div id="termina-map">
+				<img src="./assets/majoras-mask/termina-field.jpg" class="termina-field"></img>
+			</div>
+		</main>
+
+		<script src="./scripts/test.js"></script>
 	</body>
 </html>
